@@ -16,8 +16,8 @@ const connect = function () {
   });
 
   //This is what a listener looks like when it is lisening for an on connection event.
-  conn.on("data", () => {
-    console.log("you ded cuz you idled");
+  conn.on("data", (data) => {
+    console.log(data);
   });
   return conn;
 };
