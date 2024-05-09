@@ -13,19 +13,14 @@ const connect = function () {
   serverConnection.on("connect", () => {
     console.log("connection to game server has been established")
     serverConnection.write("Name: SDP");
+
+    // // const autoMoveUp = function () {
+    // //   serverConnection.write("Move: up")
+    // // }
+    // // setInterval(autoMoveUp, 50);
+
   });
 
-
-
-  // // standard version of .on event.
-  //conn.on("connect", functionThatDoesSomething);
-
-  // conn.on("connect", (client) => {
-  //   console.log(client);
-  //   
-  // });
-
-  //This is what a listener looks like when it is lisening for an on connection event.
   serverConnection.on("data", (data) => {
     console.log(data);
   });
