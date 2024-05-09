@@ -38,6 +38,12 @@ const handleUserInput = function (key) {
   }
   // setInterval(autoMoveRight, 50);
   // }
+  if (key === "t") {
+    //const autoMoveRight = function () {
+    serverConnection.write("Say charge!!!!!");
+  }
+  // setInterval(autoMoveRight, 50);
+  // }
 };
 
 module.exports = setupInput;
